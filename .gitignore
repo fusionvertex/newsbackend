@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+.env
+.DS_Store
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+*.log
+coverage/
+dist/
+build/
+# OS
+Thumbs.db
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Misc
+*.tgz
+# Local environment
+.env.*.local
+
+# News data file
+newsdata.json
