@@ -10,7 +10,10 @@ const path = require('path');
 const { OpenAI } = require('openai');
 
 const filePath = path.join(__dirname, 'newsdata.json');
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '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';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+if (!OPENAI_API_KEY) {
+  throw new Error('OPENAI_API_KEY is not set in environment variables.');
+}
 const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
 /**
