@@ -4,6 +4,7 @@
  * Handles periodic summarization of news articles using OpenAI.
  * Exports summarization functions and a scheduler starter.
  */
+require('dotenv').config();
 const { readArticlesFromFile, filterArticlesByStatus } = require('./newsdataUtils');
 const fs = require('fs');
 const path = require('path');
